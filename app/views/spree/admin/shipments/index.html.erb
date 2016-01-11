@@ -31,13 +31,6 @@
         </div>
       </div>
 
-      <div class="four columns">
-        <div class="field">
-          <%= label_tag nil, Spree.t(:status) %><br/>
-          <%= f.select :state_eq, Spree::Shipment.state_machines[:state].states.collect {|s| [Spree.t("shipment_state.#{s.name}"), s.value]}, {:include_blank => true}, :class => 'select2' %>
-        </div>
-      </div>
-
       <div class="omega four columns">
       </div>
 
